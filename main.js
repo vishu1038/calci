@@ -1,4 +1,12 @@
+function clr() {
+	document.getElementById('out-val').innerHTML="";
+	document.getElementById('hist-val').innerHTML="";
+}
+
 function disp(x) {
+	if(document.getElementById('hist-val').innerHTML!="") {
+		clr();
+	}
 	var operator=document.getElementsByClassName('operator');
 	var c=0;
 	for(var i=0;i<operator.length;i++) {
@@ -30,11 +38,6 @@ function disp(x) {
 	else {
 		document.getElementById('out-val').innerHTML+=x;
 	}
-}
-
-function clr() {
-	document.getElementById('out-val').innerHTML="";
-	document.getElementById('hist-val').innerHTML="";
 }
 
 function solve()
