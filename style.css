@@ -51,6 +51,10 @@ body {
 	outline:0;
 }
 
+.empty {
+	background-color: #eaedef;
+}
+
 .number, .operator {
 	cursor: pointer;
 }
