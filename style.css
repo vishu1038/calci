@@ -55,9 +55,13 @@ body {
 	cursor: pointer;
 }
 
+.number {
+	border:1px solid #76448A;
+}
+
 .operator {
-	background-color: black;
-	color:#797D7F;
+	background-color: #4A235A ;
+	color: white;
 }
 
 .number:hover {
